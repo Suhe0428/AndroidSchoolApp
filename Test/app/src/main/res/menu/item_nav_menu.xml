@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<group
+    android:checkableBehavior="single">
+    <item
+        android:id="@+id/name"
+        android:title="名称"
+        android:icon="@drawable/ic_name_black_24dp"/>
+
+    <item
+        android:id="@+id/price"
+        android:title="价格"
+        android:icon="@drawable/ic_price_black_24dp" />
+
+    <item
+        android:id="@+id/place"
+        android:title="交易地点"
+        android:icon="@drawable/ic_place_black_24dp"/>
+
+    <item
+        android:id="@+id/phone"
+        android:title="联系方式"
+        android:icon="@drawable/ic_phone_black_24dp"/>
+
+    <item
+        android:id="@+id/album"
+        android:title="相册"
+        android:icon="@drawable/ic_album_black_24dp"/>
+</group>
+</menu>

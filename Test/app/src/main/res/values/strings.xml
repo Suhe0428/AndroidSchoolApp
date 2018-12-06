@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Test</string>
+    <string name="tips">
+        注意：\n
+            * 请至少选择一种联系方式进行填写 \n
+            * 拍照上传你的宝贝
+    </string>
+</resources>
