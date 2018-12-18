@@ -60,7 +60,6 @@ public class LoginActivity extends AppCompatActivity {
             public void onClick(View v) {
                 String phone=editText_tel.getText().toString();
                 String password=editText_password.getText().toString();
-
 //                if(phone.equals("10010")&&password.equals("10086")){
 //                    Intent intent=new Intent(LoginActivity.this,MainActivity.class);
 //                    startActivity(intent);
