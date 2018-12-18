@@ -16,23 +16,25 @@
             android:label="School">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
             android:name="com.example.asus.login.LoginActivity"
-            android:label="登录"></activity>
-        <!--<activity android:name="com.example.asus.fragement.FragmentOne">-->
-        <!--</activity>-->
+            android:label="登录" />
+        <!-- <activity android:name="com.example.asus.fragement.FragmentOne"> -->
+        <!-- </activity> -->
         <activity
             android:name="com.example.asus.register.RegisterActivity"
-            android:label="注册"></activity>
+            android:label="注册" />
         <activity
             android:name="com.example.asus.register.RegisterSuccessActivity"
-            android:label="注册成功"></activity>
+            android:label="注册成功" />
         <activity
             android:name="com.example.asus.secondhand.SecondHandActivity"
-            android:label="二手交易"></activity>
+            android:label="二手交易" />
+        <activity android:name="com.example.asus.message.MessageActivity"></activity>
     </application>
 
 </manifest>

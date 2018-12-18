@@ -2,6 +2,7 @@ package com.example.asus.fragement;
 
 import android.app.Fragment;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AlertDialog;
@@ -21,19 +22,30 @@ import java.util.List;
 
 public class FragmentThree extends Fragment {
     public List<MessageBean> messageBeanList;
+    public ListView listView_message;
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_three, container, false);
         messageBeanList = new ArrayList<>();
-        ListView listView_message = view.findViewById(R.id.list_message);
+        listView_message = view.findViewById(R.id.list_message);
         initMessage();
         listView_message.setAdapter(new MessageAdapter(getActivity(), messageBeanList));
+        //点击进入
+        listView_message.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Intent intent=new Intent()
+
+            }
+        });
+
+        //长按删除
         listView_message.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
             @Override
             public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
-                showDialog();
+                showDeleteDialog(position);
                 return false;
             }
         });
@@ -42,7 +54,7 @@ public class FragmentThree extends Fragment {
 
     //初始化数据
     private void initMessage() {
-        MessageBean message1 = new MessageBean(R.drawable.pear, "中国移动", "11-3", "一起来聊天啊");
+        MessageBean message1 = new MessageBean(R.drawable.pear, "中国移动", "11-3", "一起来聊天啊一起来聊天啊一起来聊天啊一起来聊天啊一起来聊天啊一起来聊天啊一起来聊天啊一起来聊天啊");
         messageBeanList.add(message1);
         MessageBean message2 = new MessageBean(R.drawable.pear, "中国联通", "11-3", "一起来聊天啊");
         messageBeanList.add(message2);
@@ -66,8 +78,8 @@ public class FragmentThree extends Fragment {
         messageBeanList.add(message11);
     }
 
-    /*显示对话框*/
-    public void showDialog(){
+    /*显示删除对话框*/
+    public void showDeleteDialog(final int position){
         AlertDialog.Builder builder=new AlertDialog.Builder(getActivity());
         builder.setIcon(R.drawable.ic_dialog_black_24dp);
         builder.setTitle("提示");
@@ -76,7 +88,8 @@ public class FragmentThree extends Fragment {
                 new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
-
+                        messageBeanList.remove(position);
+                        listView_message.setAdapter(new MessageAdapter(getActivity(), messageBeanList));
                     }
                 });
         AlertDialog dialog=builder.create();
