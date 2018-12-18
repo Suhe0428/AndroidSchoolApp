@@ -6,6 +6,7 @@ import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.WindowManager;
 import android.widget.ListView;
 
 import com.example.asus.message.MessageAdapter;
@@ -30,18 +31,21 @@ public class FragmentThree extends Fragment {
     }
 
     private void initMessage() {//初始化数据
-        MessageBean message1 = new MessageBean(R.drawable.pear, "中国移动", "11-3", "一起来聊天啊");
-        messageBeanList.add(message1);
-        MessageBean message2 = new MessageBean(R.drawable.pear, "中国联通", "11-3", "一起来聊天啊");
-        messageBeanList.add(message2);
-        MessageBean message3 = new MessageBean(R.drawable.pear, "中国电信", "11-3", "一起来聊天啊");
-        messageBeanList.add(message3);
-        MessageBean message4 = new MessageBean(R.drawable.pear, "马云", "11-3", "一起来聊天啊");
-        messageBeanList.add(message4);
-        MessageBean message5 = new MessageBean(R.drawable.pear, "马化腾", "11-3", "一起来聊天啊");
-        messageBeanList.add(message5);
-        MessageBean message6 = new MessageBean(R.drawable.pear, "李彦宏", "11-3", "一起来聊天啊");
-        messageBeanList.add(message6);
-
+        for (int i = 0; i < 15; i++) {
+            MessageBean message1 = new MessageBean(R.drawable.pear, "中国移动", "11-3", "一起来聊天啊");
+            messageBeanList.add(message1);
+        }
+//        MessageBean message1 = new MessageBean(R.drawable.pear, "中国移动", "11-3", "一起来聊天啊");
+//        messageBeanList.add(message1);
+//        MessageBean message2 = new MessageBean(R.drawable.pear, "中国联通", "11-3", "一起来聊天啊");
+//        messageBeanList.add(message2);
+//        MessageBean message3 = new MessageBean(R.drawable.pear, "中国电信", "11-3", "一起来聊天啊");
+//        messageBeanList.add(message3);
+//        MessageBean message4 = new MessageBean(R.drawable.pear, "马云", "11-3", "一起来聊天啊");
+//        messageBeanList.add(message4);
+//        MessageBean message5 = new MessageBean(R.drawable.pear, "马化腾", "11-3", "一起来聊天啊");
+//        messageBeanList.add(message5);
+//        MessageBean message6 = new MessageBean(R.drawable.pear, "李彦宏", "11-3", "一起来聊天啊");
+//        messageBeanList.add(message6);
     }
 }

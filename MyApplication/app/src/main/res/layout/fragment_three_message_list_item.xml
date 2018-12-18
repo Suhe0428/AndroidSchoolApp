@@ -7,9 +7,10 @@
     <!--左：头像-->
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/circleImageView_message_item_image"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:src="@drawable/pear"/>
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/pear"
+        android:layout_margin="10dp"/>
     <!--右：内容-->
     <LinearLayout
         android:layout_width="match_parent"

@@ -7,7 +7,7 @@ import android.support.design.widget.BottomNavigationView;
 import android.support.v7.app.AppCompatActivity;
 import android.view.KeyEvent;
 import android.view.MenuItem;
-import android.widget.Toolbar;
+import android.view.WindowManager;
 
 import com.example.asus.fragement.FragmentFour;
 import com.example.asus.fragement.FragmentOne;
