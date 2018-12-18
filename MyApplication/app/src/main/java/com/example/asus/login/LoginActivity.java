@@ -61,12 +61,12 @@ public class LoginActivity extends AppCompatActivity {
                 String phone=editText_tel.getText().toString();
                 String password=editText_password.getText().toString();
 
-                if(phone.equals("10010")&&password.equals("10086")){
-                    Intent intent=new Intent(LoginActivity.this,MainActivity.class);
-                    startActivity(intent);
-                    finish();
-                }
-                //doPost(phone,password);
+//                if(phone.equals("10010")&&password.equals("10086")){
+//                    Intent intent=new Intent(LoginActivity.this,MainActivity.class);
+//                    startActivity(intent);
+//                    finish();
+//                }
+                doPost(phone,password);
             }
         });
         //注册

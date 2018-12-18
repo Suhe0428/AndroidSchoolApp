@@ -12,8 +12,6 @@
     <string name="my_help">我的互助</string>
     <string name="my_setting">设置</string>
 
-    <!--“消息”页面-->
-    <string name="message_unread">没有未读消息</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
