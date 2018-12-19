@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000">
+
+    <!--上部：头像信息-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/circleImageView_community_source_img"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/pear"/>
+        <TextView
+            android:id="@+id/textView__community_source"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="山东农业大学"/>
+
+    </LinearLayout>
+
+    <!--中上：文字内容-->
+    <TextView
+        android:id="@+id/textView__community_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </TextView>
+
+
+    <!--中下：图片内容-->
+    <ImageView
+        android:id="@+id/imageView_community_content_img"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+    </ImageView>
+
+    <!--底部: 操作-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"></LinearLayout>
+</LinearLayout>
