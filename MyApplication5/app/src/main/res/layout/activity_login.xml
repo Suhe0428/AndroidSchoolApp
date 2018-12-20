@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/image_login_background"
+    tools:context="com.example.asus.login.LoginActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="80dp" />
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="登录"
+            android:textColor="#fff"
+            android:textAlignment="center"
+            android:textSize="45dp"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="45dp" />
+
+
+        <EditText
+            android:id="@+id/editText_tel"
+            android:layout_width="350dp"
+            android:layout_height="55dp"
+            android:ems="11"
+            android:layout_margin="15dp"
+            android:layout_gravity="center"
+            android:hint="手机号/QQ/账号"
+            android:textColorHint="#fff"
+            android:textColor="#fff"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            tools:layout_editor_absoluteX="104dp" />
+
+        <EditText
+            android:id="@+id/editText_password"
+            android:inputType="textPassword"
+            android:layout_width="350dp"
+            android:layout_height="55dp"
+            android:layout_margin="15dp"
+            android:ems="11"
+            android:hint="密码"
+            android:textColorHint="#fff"
+            android:textColor="#fff"
+            android:layout_gravity="center"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            tools:layout_editor_absoluteX="104dp" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <Button
+                android:id="@+id/button_submit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/style_login_button"
+                android:text="登录"
+                />
+
+            <Button
+                android:id="@+id/button_register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/style_login_button"
+                android:text="注册"/>
+
+            <TextView
+                android:id="@+id/textView_forget"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="忘记密码？"
+                android:layout_marginLeft="65dp"
+                android:autoLink="all"/>
+        </LinearLayout>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
