@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.asus.register.RegisterActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="手机号注册"
+            android:textSize="45dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="45dp"/>
+
+
+
+        <EditText
+            android:id="@+id/editText_phone"
+            android:layout_width="350dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:hint="请输入11位手机号"
+            android:layout_marginTop="15dp"/>
+
+        <EditText
+            android:id="@+id/editText_password"
+            android:inputType="textPassword"
+            android:layout_width="350dp"
+            android:layout_height="55dp"
+            android:layout_margin="15dp"
+            android:ems="16"
+            android:hint="请输入密码"
+            android:layout_gravity="center"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            tools:layout_editor_absoluteX="104dp" />
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/editText_yanzheng"
+                android:layout_width="150dp"
+                android:hint="输入验证码"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"/>
+
+            <Button
+                android:id="@+id/button_get"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="获取验证码"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button_register"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:text="注册"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"/>
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
