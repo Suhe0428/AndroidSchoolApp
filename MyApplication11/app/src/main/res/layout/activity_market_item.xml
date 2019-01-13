@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--布局:纵向-->
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!--2.图片展示-->
+            <ImageView
+                android:id="@+id/imageView_goods"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:scaleType="fitXY"/>
+            <!--3.信息浏览-->
+            <LinearLayout
+                android:id="@+id/linearLayout_goods"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@+id/imageView_goods">
+                <!--1.名称-->
+                <LinearLayout
+                    android:id="@+id/item_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal">
+                    <!--1.1 图标-->
+                    <LinearLayout
+                        android:id="@+id/linearLayout_image"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:id="@+id/imageView_name"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/ic_market_goods_item_name"/>
+                        <TextView
+                            android:layout_width="30dp"
+                            android:layout_height="10dp"
+                            android:text="名称"
+                            android:textColor="#000"
+                            android:textSize="9dp"
+                            android:textAlignment="center"/>
+                    </LinearLayout>
+                    <!--1.2 内容-->
+                    <TextView
+                        android:id="@+id/textView_name"
+                        android:layout_width="750dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="15dp"
+                        android:textSize="20sp"/>
+                </LinearLayout>
+
+                <!--2.价格-->
+                <LinearLayout
+                    android:id="@+id/item_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal">
+                    <!--2.1 图标-->
+                    <LinearLayout
+                        android:id="@+id/linearLayout_price"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:id="@+id/imageView_price"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/ic_market_goods_item_price"/>
+                        <TextView
+                            android:layout_width="30dp"
+                            android:layout_height="10dp"
+                            android:text="价格"
+                            android:textColor="#000"
+                            android:textSize="9dp"
+                            android:textAlignment="center"/>
+                    </LinearLayout>
+                    <!--2.2 内容-->
+                    <TextView
+                        android:id="@+id/textView_price"
+                        android:layout_width="750dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="15dp"
+                        android:textSize="20dp"/>
+                </LinearLayout>
+
+                <!--3.地点-->
+                <LinearLayout
+                    android:id="@+id/item_place"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal">
+                    <!--3.1 图标-->
+                    <LinearLayout
+                        android:id="@+id/linearLayout_place"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:id="@+id/imageView_place"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/ic_market_goods_item_place"/>
+                        <TextView
+                            android:layout_width="30dp"
+                            android:layout_height="10dp"
+                            android:text="地点"
+                            android:textColor="#000"
+                            android:textSize="9dp"
+                            android:textAlignment="center"/>
+                    </LinearLayout>
+                    <!--3.2 内容-->
+                    <TextView
+                        android:id="@+id/textView_place"
+                        android:layout_width="750dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="15dp"
+                        android:textSize="20dp"/>
+                </LinearLayout>
+
+                <!--4.联系方式-->
+                <LinearLayout
+                    android:id="@+id/item_seller_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal">
+                    <!--4.1 图标-->
+                    <LinearLayout
+                        android:id="@+id/linearLayout_seller_phone"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:id="@+id/imageView_seller_phone"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/ic_market_goods_item_seller_phone"/>
+                        <TextView
+                            android:layout_width="30dp"
+                            android:layout_height="10dp"
+                            android:text="联系方式"
+                            android:textColor="#000"
+                            android:textSize="9dp"
+                            android:textAlignment="center"/>
+                    </LinearLayout>
+                    <!--4.2 内容-->
+                    <TextView
+                        android:id="@+id/textView_seller_phone"
+                        android:layout_width="750dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="15dp"
+                        android:textSize="20dp"/>
+                </LinearLayout>
+
+                <!--5.简介-->
+                <LinearLayout
+                    android:id="@+id/linearlayout_expandableText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <!--5.1 图标-->
+                    <LinearLayout
+                        android:id="@+id/expandableText"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:id="@+id/imageView_expandableText"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/ic_market_goods_item_info"/>
+                        <TextView
+                            android:layout_width="30dp"
+                            android:layout_height="10dp"
+                            android:text="简介"
+                            android:textColor="#000"
+                            android:textSize="9dp"
+                            android:textAlignment="center"/>
+                    </LinearLayout>
+                    <!--5.2 内容-->
+                    <cn.carbs.android.expandabletextview.library.ExpandableTextView
+                        android:id="@+id/etv"
+                        android:background="@drawable/ic_market_goods_item_etv_border"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#333333"
+                        android:textSize="20dp"
+                        app:etv_MaxLinesOnShrink="3"
+                        app:layout_constraintTop_toBottomOf="@+id/linearLayout_goods" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>
