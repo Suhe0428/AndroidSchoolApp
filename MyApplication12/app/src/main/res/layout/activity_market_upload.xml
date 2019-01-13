@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.market.upload.UploadActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <!--标题栏-->
+            <com.example.market.upload.UploadTitleLayout
+                android:id="@+id/title_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <!--标题-->
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+                android:text="请填写以下信息"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                app:layout_constraintTop_toBottomOf="@+id/title_layout"/>
+            <!--信息填写-->
+            <LinearLayout
+                android:id="@+id/info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@+id/title">
+                <!--物品名称-->
+                <LinearLayout
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true">
+
+                    <TextView
+                        android:id="@+id/name_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="物品名称" />
+
+                    <EditText
+                        android:id="@+id/name_edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <!--价格-->
+                <LinearLayout
+                    android:id="@+id/price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/price_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="交易价格" />
+
+                    <EditText
+                        android:id="@+id/price_edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <!--交易地点-->
+                <LinearLayout
+                    android:id="@+id/place"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/place_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="交易地点" />
+
+                    <Spinner
+                        android:id="@+id/place_spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:entries="@array/market_upload_place_spinner" />
+                </LinearLayout>
+                <!--手机-->
+                <LinearLayout
+                    android:id="@+id/call"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/call_text"
+                        android:layout_width="56dp"
+                        android:layout_height="wrap_content"
+                        android:text="手机"
+                        android:textAlignment="center" />
+
+                    <EditText
+                        android:id="@+id/call_edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <!--QQ-->
+                <LinearLayout
+                    android:id="@+id/qq"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/qq_text"
+                        android:layout_width="56dp"
+                        android:layout_height="wrap_content"
+                        android:text="QQ"
+                        android:textAlignment="center" />
+
+                    <EditText
+                        android:id="@+id/qq_edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <!--微信-->
+                <LinearLayout
+                    android:id="@+id/wechat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/wechat_text"
+                        android:layout_width="56dp"
+                        android:layout_height="wrap_content"
+                        android:text="微信"
+                        android:textAlignment="center" />
+
+                    <EditText
+                        android:id="@+id/wechat_edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <!--其他说明-->
+                <LinearLayout
+                    android:id="@+id/other"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/other_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="其他说明" />
+
+                    <EditText
+                        android:id="@+id/other_edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="140dp" />
+                </LinearLayout>
+            </LinearLayout>
+            <!--添加照片-->
+            <Button
+                android:id="@+id/button_picture"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/info"
+                android:text="拍照上传"
+                android:background="#0ff"
+                android:layout_margin="25dp" />
+
+            <!--拍照图片-->
+            <ImageView
+                android:id="@+id/imageView_picture"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/button_picture"/>
+
+            <!--tips-->
+            <TextView
+                android:id="@+id/tip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:text="@string/tips"
+                app:layout_constraintTop_toBottomOf="@+id/button_picture" />
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
