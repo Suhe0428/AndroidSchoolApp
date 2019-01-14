@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="classification">
+        <item>请选择分类</item>
+        <item>零食</item>
+        <item>衣物</item>
+        <item>化妆品</item>
+        <item>生活用品</item>
+        <item>学习用品</item>
+    </string-array>
+</resources>
