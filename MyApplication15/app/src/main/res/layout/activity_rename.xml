@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.asus.login.RenameActivity">
+
+    <EditText
+        android:id="@+id/editText_usrName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:inputType="text"/>
+
+    <Button
+        android:id="@+id/button_userName_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/style_my_button"
+        android:text="保存"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/editText_usrName"/>
+
+</android.support.constraint.ConstraintLayout>
