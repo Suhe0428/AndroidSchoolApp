@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+   <package name=""  extends="struts-default">
+       <!--UserAction-->
+       <action name="login" class="com.example.asus.action.UserAction" method="login"/>
+       <action name="register" class="com.example.asus.action.UserAction" method="register"/>
+       <action name="findUserByPhone" class="com.example.asus.action.UserAction" method="getUser"/>
+       <action name="updateUser" class="com.example.asus.action.UserAction" method="updateUser"/>
+
+       <!--GoodsAction-->
+       <action name="queryAllGoods" class="com.example.asus.action.GoodsAction" method="queryAllGoods"/>
+
+       <!--PostAction-->
+       <action name="queryAllPost" class="com.example.asus.action.PostAction" method="queryAllPost"/>
+   </package>
+</struts>
