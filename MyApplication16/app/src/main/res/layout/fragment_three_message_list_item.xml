@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <!--左：头像-->
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/circleImageView_message_item_image"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/pear"
+        android:layout_margin="10dp"/>
+    <!--右：内容-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="vertical"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+        <!--右上左：标题+时间-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+            <TextView
+                android:id="@+id/textView_message_item_title"
+                android:layout_width="250dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="20sp" />
+            <TextView
+                android:id="@+id/textView_message_item_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:textSize="16sp" />
+        </LinearLayout>
+        <!--右下:消息预览-->
+        <TextView
+            android:id="@+id/textView_message_item_content"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:singleLine="true"/>
+    </LinearLayout>
+
+</LinearLayout>

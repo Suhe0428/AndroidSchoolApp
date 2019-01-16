@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--滑动：只能有一个子控件-->
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.constraint.ConstraintLayout
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/linearLayout_scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <!--帖子体linearLayout_post-->
+            <LinearLayout
+                android:id="@+id/linearLayout_post"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <!--上部：头像信息-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="10dp"
+                    android:orientation="horizontal">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/circleImageView_post_source_img"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="5dp"
+                        android:src="@drawable/pear" />
+
+                    <TextView
+                        android:id="@+id/textView_post_source_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:gravity="center_vertical"
+                        android:text="华为"
+                        android:textSize="25sp" />
+
+                </LinearLayout>
+
+                <!--中上：文字内容-->
+                <TextView
+                    android:id="@+id/textView__post_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="5G！"
+                    android:textSize="20sp" />
+
+
+                <!--中下：图片内容-->
+                <ImageView
+                    android:id="@+id/imageView_post_content_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:scaleType="fitXY" />
+
+                <!--底部: 操作-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_margin="10dp"
+                    android:orientation="horizontal">
+                    <!--评论-->
+                    <ImageButton
+                        android:id="@+id/imageButton_comment"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="#00000000"
+                        android:src="@drawable/ic_community_comment" />
+
+                    <TextView
+                        android:id="@+id/textView_com_num"
+                        android:layout_width="40dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="center_vertical"
+                        android:text="评论" />
+                    <!--分享-->
+                    <ImageButton
+                        android:id="@+id/imageButton_share"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="#00000000"
+                        android:src="@drawable/ic_community_share" />
+
+                    <TextView
+                        android:id="@+id/textView_sha_num"
+                        android:layout_width="40dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="center_vertical"
+                        android:text="分享" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--评论体-->
+            <ListView
+                android:id="@+id/listView_comment"
+                android:layout_width="match_parent"
+                android:layout_height="640dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="1dp"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout_post"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
