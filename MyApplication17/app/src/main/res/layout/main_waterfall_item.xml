@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="15dp">
+
+    <ImageView
+        android:id="@+id/imageView_goodsImage"
+        android:layout_width="130dp"
+        android:layout_height="150dp"
+        android:scaleType="fitXY"/>
+    <TextView
+        android:id="@+id/textView_goodsInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:id="@+id/linearLayout_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <!--卖家头像-->
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/circle_userImage"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/pear"
+            android:layout_centerInParent="true"/>
+        <!--卖家昵称-->
+        <TextView
+            android:id="@+id/textView_userName"
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="10dp"/>
+    </LinearLayout>
+
+</LinearLayout>
