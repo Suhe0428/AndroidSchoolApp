@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.asus.my.replace.StepOneActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:text="更换手机号后，请用新账号重新登录。"
+        android:textSize="16sp"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="输入原手机号："
+            android:gravity="center"
+            android:layout_margin="15dp"/>
+
+
+        <EditText
+            android:id="@+id/editText_oldPhone"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="请输入11位手机号码 "
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:inputType="number"
+            android:maxLength="11"/>
+    </LinearLayout>
+
+
+</LinearLayout>

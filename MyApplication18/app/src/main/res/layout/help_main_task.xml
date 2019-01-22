@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <!--头部-：概要信息—标题、标签-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="#c1c1c1"
+            android:orientation="horizontal">
+            <!--标题-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="3dp"
+                android:gravity="center_vertical"
+                android:text="标题"
+                android:textColor="#000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView_taskTitle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="8"
+                android:gravity="center_vertical"
+                android:text="圆通快递取件" />
+            <!--标签-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="3dp"
+                android:gravity="center_vertical"
+                android:text="标签"
+                android:textColor="#000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView_taskKeyWord"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center_vertical"
+                android:text="快递" />
+        </LinearLayout>
+        <!--中间：主体信息—内容、图片-->
+        <LinearLayout
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#b45">
+            <!--内容-->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_weight="7"
+                android:orientation="vertical">
+                <!--内容-->
+                <TextView
+                    android:id="@+id/textView_taskContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="6"
+                    android:textStyle="italic"
+                    android:layout_margin="4dp"
+                    android:textColor="#000"
+                    android:textSize="16sp"
+                    android:text="菜鸟驿站圆通快递取件，货号9527，禁止拆卸包装。送至学生公寓6。"/>
+                <!--地点-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_margin="3dp"
+                        android:text="地点"
+                        android:textColor="#000"
+                        android:textStyle="bold"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/textView_taskPlace"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text= "农大四合院菜鸟驿站"
+                        android:gravity="center_vertical"/>
+                </LinearLayout>
+                <!--时间-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_margin="3dp"
+                        android:text="时间"
+                        android:textColor="#000"
+                        android:textStyle="bold"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/textView_taskTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text= "2019-1-18 20:00-21:00"
+                        android:gravity="center_vertical"/>
+                </LinearLayout>
+            </LinearLayout>
+            <!--图片-->
+            <ImageView
+                android:id="@+id/imageView_taskImg"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="3"
+                android:layout_margin="2dp"
+                android:background="@drawable/pear"
+                android:scaleType="fitXY" />
+        </LinearLayout>
+        <!--底部：操作—发布时间、接收按钮-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <!--发布时间-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:text="发布于："
+                android:textColor="#000"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/textView_taskPublishTime"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="8"
+                android:text="2019-1-18 19:20"
+                android:textColor="#000"
+                android:textStyle="bold" />
+            <!--领取任务-->
+            <Button
+                android:id="@+id/button_getTask"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_weight="2"
+                android:background="#00000000"
+                android:text="领取任务" />
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>
