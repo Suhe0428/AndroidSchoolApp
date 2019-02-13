@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+    <package name="" extends="struts-default">
+        <!--UserAction-->
+        <action name="login" class="com.example.asus.action.UserAction" method="login"/>
+        <action name="register" class="com.example.asus.action.UserAction" method="register"/>
+        <action name="findUserById" class="com.example.asus.action.UserAction" method="findUserById"/>
+        <action name="findUserByPhone" class="com.example.asus.action.UserAction" method="findUserByPhone"/>
+        <action name="updateUserName" class="com.example.asus.action.UserAction" method="updateUserName"/>
+        <action name="updateUserPhone" class="com.example.asus.action.UserAction" method="updateUserPhone"/>
+        <!--GoodsAction-->
+        <action name="queryAllGoods" class="com.example.asus.action.GoodsAction" method="queryAllGoods"/>
+        <action name="selectGoods" class="com.example.asus.action.GoodsAction" method="selectGoods"/>
+        <action name="deleteGoods" class="com.example.asus.action.GoodsAction" method="deleteGoods"/>
+
+        <!--PostAction-->
+        <action name="queryAllPost" class="com.example.asus.action.PostAction" method="queryAllPost"/>
+        <action name="findPostById" class="com.example.asus.action.PostAction" method="findPostById"/>
+
+        <!--CommentAction-->
+        <action name="selectCommentByPostId" class="com.example.asus.action.CommentAction"
+                method="selectCommentByPostId"/>
+        <action name="addComment" class="com.example.asus.action.CommentAction" method="addComment"/>
+
+        <!--TargetAction-->
+        <action name="findTargetById" class="com.example.asus.action.TargetAction" method="findTargetById"/>
+
+        <!--PlaceAction-->
+        <action name="findPlaceById" class="com.example.asus.action.PlaceAction" method="findPlaceById"/>
+
+        <!--TaskAction-->
+        <action name="queryAllTask" class="com.example.asus.action.TaskAction" method="queryAllTask"/>
+        <action name="findTaskById" class="com.example.asus.action.TaskAction" method="findTaskById"/>
+        <action name="addTask" class="com.example.asus.action.TaskAction" method="addTask"/>
+        <action name="deleteTask" class="com.example.asus.action.TaskAction" method="deleteTask"/>
+        <action name="updateTask" class="com.example.asus.action.TaskAction" method="updateTask"/>
+        <action name="commitTask" class="com.example.asus.action.TaskAction" method="commitTask"/>
+        <action name="selectTask" class="com.example.asus.action.TaskAction" method="selectTask"/>
+        <!--TaskKeyWordAction-->
+        <action name="queryAllTaskKeyWord" class="com.example.asus.action.TaskKeyWordAction" method="queryAllTaskKeyWord"/>
+        <action name="findTaskKeyWordById" class="com.example.asus.action.TaskKeyWordAction" method="findTaskKeyWordById"/>
+        <action name="findTaskKeywordIDByName" class="com.example.asus.action.TaskKeyWordAction" method="findTaskKeywordIDByName"/>
+    </package>
+</struts>
