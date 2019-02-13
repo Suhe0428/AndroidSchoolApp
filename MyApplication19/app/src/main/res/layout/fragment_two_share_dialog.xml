@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginBottom="1dp"
+        android:text="分享到"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textColor="@android:color/background_dark"
+        android:layout_marginTop="5dp"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal">
+
+        <!--qq-->
+        <LinearLayout
+            android:layout_width="60dp"
+            android:layout_height="80dp"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/circle_share_QQ"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/qq"/>
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="20dp"
+                android:text="QQ"
+                android:textAlignment="center"
+                android:textColor="#000"/>
+        </LinearLayout>
+
+        <!--微信-->
+        <LinearLayout
+            android:layout_width="60dp"
+            android:layout_height="80dp"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/circle_share_WeChat"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/wechat"/>
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="20dp"
+                android:text="微信"
+                android:textAlignment="center"
+                android:textColor="#000"/>
+        </LinearLayout>
+
+        <!--QQ空间-->
+        <LinearLayout
+            android:layout_width="60dp"
+            android:layout_height="80dp"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/circle_share_QQSpace"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/qqspace"/>
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="20dp"
+                android:text="QQ空间"
+                android:textAlignment="center"
+                android:textColor="#000"/>
+        </LinearLayout>
+
+        <!--朋友圈-->
+        <LinearLayout
+            android:layout_width="60dp"
+            android:layout_height="80dp"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/circle_share_WeChatC"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/wechatc"/>
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="20dp"
+                android:text="朋友圈"
+                android:textAlignment="center"
+                android:textColor="#000"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@android:color/darker_gray"/>
+
+    <TextView
+        android:id="@+id/tv_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="取消"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textColor="@android:color/background_dark"/>
+
+</LinearLayout>
