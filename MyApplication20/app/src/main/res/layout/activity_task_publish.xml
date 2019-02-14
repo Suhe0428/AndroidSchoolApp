@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.help.publish.TaskPublishActivity">
+
+    <TextView
+        android:id="@id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="填写信息，发布你的任务"
+        android:textSize="18sp"
+        android:textAlignment="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <!--头部-：概要信息—标题、标签-->
+        <!--标题-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/style_help_task_publish_top"
+            android:orientation="horizontal">
+            <!--标题-->
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="3dp"
+                android:gravity="center_vertical"
+                android:text="标题"
+                android:textSize="17sp"
+                android:textColor="#000"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editText_taskTitle"
+                android:layout_width="0dp"
+                android:layout_weight="6"
+                android:layout_height="match_parent"
+                android:hint="在此填写标题" />
+        </LinearLayout>
+        <!--标签-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/style_help_task_publish_top"
+            android:orientation="horizontal">
+            <!--标签-->
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_margin="3dp"
+                android:gravity="center_vertical"
+                android:textSize="17sp"
+                android:text="标签"
+                android:textColor="#000"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spinner_taskKeyword"
+                android:layout_width="0dp"
+                android:layout_weight="6"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:entries="@array/task_target" />
+        </LinearLayout>
+
+        <!--中间：主体信息—内容、图片-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/style_help_task_publish_mid">
+            <!--内容-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:orientation="vertical">
+                <!--内容-->
+                <EditText
+                    android:id="@+id/editText_taskContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="8"
+                    android:textStyle="italic"
+                    android:layout_margin="4dp"
+                    android:textColor="#000"
+                    android:textSize="16sp"
+                    android:hint="在此填写详细信息..."
+                    android:gravity="start"/>
+                <!--地点-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_margin="3dp"
+                        android:text="地点"
+                        android:textColor="#000"
+                        android:textStyle="bold"
+                        android:gravity="center"/>
+
+                    <EditText
+                        android:id="@+id/editText_taskPlace"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:hint="在此填写地点"
+                        android:textSize="16sp"
+                        android:gravity="center_vertical"/>
+                </LinearLayout>
+                <!--时间-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_margin="3dp"
+                        android:text="时间"
+                        android:textColor="#000"
+                        android:textStyle="bold"
+                        android:gravity="center"/>
+
+                    <EditText
+                        android:id="@+id/editText_taskTime"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="在此填写具体时间，格式：年-月-日 时:分"
+                        android:textSize="16sp"
+                        android:gravity="center_vertical"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--底部：操作—发布时间、接收按钮-->
+        <Button
+            android:id="@+id/button_publish"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/style_help_task_publish_bottom"
+            android:layout_marginTop="10dp"
+            android:text="发布"/>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

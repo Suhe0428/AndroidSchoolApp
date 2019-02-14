@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="price">
+        <item>请选择价格</item>
+        <item>&lt;50</item>
+        <item>&lt;100</item>
+        <item>&lt;150</item>
+        <item>&gt;150</item>
+    </string-array>
+</resources>

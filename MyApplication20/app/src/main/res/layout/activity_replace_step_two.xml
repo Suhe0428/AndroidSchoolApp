@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.asus.my.replace.StepOneActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:text="更换手机号后，会自动跳转到登录界面用新账号重新登录。"
+        android:textSize="16sp"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="输入新手机号："
+            android:gravity="center"
+            android:layout_margin="15dp"/>
+
+
+        <EditText
+            android:id="@+id/editText_newPhone"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="请输入11位手机号码 "
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:inputType="number"
+            android:maxLength="11"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="请输入短信验证码:"
+            android:layout_margin="15dp"
+            android:layout_gravity="center"
+            android:gravity="center"/>
+        <EditText
+            android:id="@+id/code"
+            android:layout_width="110dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:maxLength="6"
+            android:inputType="number"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_margin="15dp"
+            android:text="发送短信验证码"
+            android:layout_gravity="center"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/commit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:text="提交"
+        android:background="@drawable/style_my_button"/>
+
+</LinearLayout>

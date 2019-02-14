@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="market_upload_place_spinner">
+        <item>请选择</item>
+        <item>图书馆</item>
+        <item>文理大楼</item>
+        <item>学生食堂</item>
+        <item>学生公寓6</item>
+        <item>操场</item>
+        <item>体育馆</item>
+        <item>电子阅览室</item>
+    </string-array>
+</resources>
